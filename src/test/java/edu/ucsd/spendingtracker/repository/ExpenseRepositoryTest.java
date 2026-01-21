@@ -41,13 +41,13 @@ public class ExpenseRepositoryTest {
         double total = repository.getTotal();
 
 
-        assertEquals(40.50, total);
+        assertEquals(30.50, total);
     }
 
 
     @Test
     @DisplayName("Test that getTotal() returns 0.0 when no expenses exist")
     void testGetTotalWithEmptyList() {
-        assertEquals(0.0, repository.getTotal()+2);
+        assertEquals(0.0, repository.getTotal());
     }
 }
